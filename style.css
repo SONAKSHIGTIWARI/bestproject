@@ -1,0 +1,139 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and Background */
+body {
+
+    background-color: pink;
+    color: #fff;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skills-chart {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skill {
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 50%;
+    background: #00bcd4;
+    transition: 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #ff4081;
+}
+
+/* Contact Form */
+#contact {
+    padding: 50px 0;
+    text-align: center;
+    background: #1d1d1d;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 15px 30px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ff4081;
+}
+
+/* Scroll Animation */
+#home {
+    animation: fadeIn 2s ease-out;
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
